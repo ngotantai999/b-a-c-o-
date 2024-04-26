@@ -1,0 +1,238 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    
+}
+
+ #wrapper{
+    width:100%;
+    margin: 0px auto
+    
+
+}
+#main-menu {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    
+}
+#main-menu  {
+    margin: 0px 1px;
+    flex-basis: 60%;
+}
+#main-menu li{
+    position: relative;
+}
+#main-menu li a {
+    color: white;
+    display: block;
+    
+    text-decoration: none;
+    padding: 20px ;
+}
+#main-menu .sub-menu{
+    position: absolute;
+    background-color: rgb(101, 99, 97);
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    border: 1px solid #434343;
+    display: none;
+}
+#main-menu .sub-menu a{
+    padding: 5px 15px;
+    border-bottom: 1px solid #434343;
+    left: 0;
+}
+#main-menu .sub-menu li:hover a{
+    border-bottom: 1px solid#6e6e6e;
+    background: #333;
+    color: yellow;
+}
+#main-menu .sub-menu li:last-child a{
+    border: none;
+}
+#main-menu .sub-menu .sub-menu{
+    left: 199px;
+    top: -16px;
+}
+#main-menu li:hover>.sub-menu{
+    display: block;
+    
+}
+
+.icon{
+    display: flex;
+    font-size: 2em;
+    
+}
+#header{
+    background-color: rgb(101, 99, 97) ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+/* moda */
+.moda{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.moda__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.moda__body{
+    width: 300px;
+    height: 300px;
+    background-color: var(--white-color);
+    margin:auto;
+    position: relative;
+    
+}
+#header .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:#fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+#header .btnLogin-popup:hover{
+    background: #fff;
+    color: #162938;
+}
+.slide-show{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+    overflow: hidden;
+}
+.list-image{
+    display: flex;
+}
+ .col-8 img{
+   height: 600px;
+   
+}
+.footer ul li {
+    list-style: none;
+
+}
+
+.footer {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(212, 208, 77);
+   padding: 2%; 
+}
+
+.footer .chinhsach {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footer .chinhsach ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer .chinhsach ul li a {
+    color: black;
+}
+
+
+.footer .chinhsach ul li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+.footer .chinhsach ul h4 {
+    margin-bottom: 10px; 
+}
+.symbol ul li{
+    display: flex;
+    display: inline;
+}
+
+.download {
+    position: relative;
+    left: 800px;
+    bottom: 75px;
+}
+
+
+.chinhsach .item1  li:hover a{
+    color: yellow;
+}
+.chinhsach .item2  li:hover a{
+    color: yellow;
+}
+.col-8:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+}
+.col-8{
+    position: relative;
+    display: block;
+}
+.col-8 .name{
+    position: absolute;
+    color: white;
+    font-weight:bold ;
+    letter-spacing: 2px;
+    bottom: 0px;
+    right: 40%;
+    transition: all 0.7s ease-in-out;
+    opacity: 0;
+    font-size: 50px;
+    
+}
+.col-8:hover .name{
+    bottom: 40%;
+    opacity: 1;
+}
+.col-3:hover img{
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+ 
+  
+  
